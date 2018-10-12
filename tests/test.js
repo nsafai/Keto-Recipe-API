@@ -24,8 +24,8 @@ describe('Users', () => {
 //   .post('/session')
 //   .send({ username: 'test2@test.com', password: 'test123' })
 //   .then(function (res) {
-//     expect(res).to.have.cookie('sessionid');
-//     // The `agent` now has the sessionid cookie saved, and will send it
+//     expect(res).to.have.cookie('nToken');
+//     // The `agent` now has the nToken cookie saved, and will send it
 //     // back to the server in the next request:
 //     return agent.get('/')
 //       .then(function (res) {
