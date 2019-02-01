@@ -61,9 +61,9 @@ module.exports = (app) => {
                 }
               });
           }); // <--------- END of forEach()
-        });
+        }); // <--------- END of JSON response
       }); // <---------- END of fetch request
-    } // <--- END of foor loop
+    } // <--------- END of foor loop
   }
 
   pullEdamamRecipes(); // do this once when server boots up
