@@ -39,7 +39,6 @@ module.exports = (app) => {
         response.on('end', () => {
           const parsed = JSON.parse(body);
           console.log(`${parsed.count} recipes were fetched`);
-          console.log(`Edamam reports that there are ${parsed.hits.length} keto recipes available`);
           parsed.hits.forEach((hit) => {
             const recipeFromAPI = new RecipeSchema(hit.recipe);
 
